@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Heart Disease Predictor</h1>
+    <form id="prediction-form">
+        <form>
+            <h5>Age</h5>
+            <input type="number" name="age" id="age" min="1" max="99" required>
+            <h5>Select your gender:</h5>
+            <div class="gender-ratio">
+                <select name="inputValue" id="inputValue" required>
+                    <option value="Enter">SELECT</option>
+                    <option value="Normal ECG">MALE</option>
+                    <option value="Irregular ECG">FEMALE</option>
+                </select>
+            </div>
+            <h5>Chest Pain on a scale of 5</h5>
+            <input type="number" name="positiveInteger" id="positiveInteger" min="0" max="5" pattern="[1-9][0-9]*" required>
+            
+        </form>
+        <form>
+            <h5>Resting Blood Pressure</h5>
+            <input type="number" name="positiveInteger" id="positiveInteger" min="1" pattern="[1-9][0-9]*" required>
+            <h5>Serum Cholestoral</h5>
+            <input type="number" name="positiveInteger" id="positiveInteger" min="1" pattern="[1-9][0-9]*" required>
+            <h5>Resting Electrocardiographic Results</h5>
+                <select name="inputValue" id="inputValue" required>
+                    <option value="Enter">Enter yout choice</option>
+                    <option value="Normal ECG">Normal ECG</option>
+                    <option value="Irregular ECG">Irregular ECG</option>
+                </select>
+        </form>
+        <form>
+            <h5>Max Heart Rate</h5>
+            <input type="number" name="positiveInteger" id="positiveInteger" min="100" max="200" required pattern="[1-9][0-9]*" required>
+            <h5>Exercise Induced Angina</h5>
+            <input type="number" name="positiveInteger" id="positiveInteger" min="0"  max="1" pattern="[1-9][0-9]*" required>
+            <h5>Oldpeak</h5>
+            <select name="inputValue" id="inputValue" required>
+                <option value="Enter">Enter your choice</option>
+                <option value="Normal (0-1 mm)">Normal (0-1 mm)</option>
+                <option value="'Mild Elevation' (1-2 mm)"> Mild Elevation (1-2 mm)</option>
+                <option value="'Moderate Elevation' (2-3 mm)">  Moderate Elevation (2-3 mm)</option>
+
+            </select>
+       </form>
+       <form>
+            <h5>ST Segment</h5>
+            <select name="inputValue" id="inputValue" required>
+                <option value="1">Enter your choice</option>
+                <option value="1">up-sloping</option>
+                <option value="2">flat</option>
+            </select>
+            <h5>Major Vessels</h5>
+            <input type="number" name="positiveInteger" id="positiveInteger" min="0" max="3" pattern="[1-9][0-9]*" required>
+            <h5>THAL</h5>
+           <input type="number" name="positiveInteger" id="positiveInteger" min="3"  max='7' pattern="[1-9][0-9]*" required>
+
+
+        </form>
+        
+        
+
+    </form>
+
+    <div class="button-container">
+        <a href="http://127.0.0.1:5500/result.html" target="_blank">
+        <button type="submit">Predict</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+
+button[type="submit"] {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 350px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(255, 0, 0);
+    margin-left: 350px;
+
+
+}
+</style>
+
+
+
+

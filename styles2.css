@@ -1,0 +1,81 @@
+body {
+    background-image: url('1973502-transformed.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    text-align: center;
+    padding: 5px ;
+    animation: fadeIn 2s ease-in-out; /* Add a fade-in animation */
+    margin-top: 0px;
+}
+
+.header-text {
+    font-size: 50px;
+}
+
+.button-grid {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: auto;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.facts-grid
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    
+}
+
+h2
+{
+    backdrop-filter: blur(5px);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
